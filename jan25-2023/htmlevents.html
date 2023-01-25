@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myFunction()">
+    <h1>Welcome!!!</h1>
+
+    <h1>Onchange Event</h1>
+    <select id="mySelect" onchange="myFunction()">
+        <option value="Audi">Audi
+        <option value="BMW">BMW
+        <option value="Mercedes">Mercedes
+        <option value="Volvo">Volvo
+      </select>
+      <p id="change"></p>
+
+      <h1>Onfocus Event</h1>
+      <div>
+        First name: <input type="text" id="fname" onfocus="myFunction(this.id)"><br>
+Last name: <input type="text" id="lname" onfocus="myFunction(this.id)">
+      </div>
+
+<script src="./js/events.js"></script>
+</body>
+</html>

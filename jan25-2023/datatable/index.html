@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript CRUD Operation</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1 class="headingform"><u>Student Form</u></h1>
+    <div class="studentform">
+        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+            <div>
+                <label>Full Name</label>
+                <input type="text" name="fullname" id="fullname" required>
+            </div>
+            <div>
+                <label>Last Name</label>
+                <input type="text" name="lastname" id="lastname" required>
+            </div>
+            <div>
+                <label>Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div>
+                <label>Mobile No</label><label class="validationerror hide" id="contactValidationError">This field is
+                    required.</label>
+                <input type="number" name="contact" id="contact" onchange="validate()">
+            </div>
+            <div>
+                <label>Telephone</label><label class="validationerror hide" id="telephoneValidationError">This field is
+                    required.</label>
+                <input type="number" name="telephone" id="telephone" onchange="validate()">
+            </div>
+            <div>
+                <label>City</label>
+                <input type="text" name="city" id="city" required>
+            </div>
+
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <br>
+    <!-- <button >Import</button> -->
+    <div class="studenttable">
+        <table class="list" id="studentList">
+            <thead>
+                <tr>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Email</th>
+                    <th>Mobile No</th>
+                    <th>Telephone</th>
+                    <th>City</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+</body>
+</div>
+<script src="./js/file.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+{
+ "data": [
+    {"firstname":"Selva", "lastname":"priya", "email":"selva@gmail.com", "contact":"9876543210","telephone":"285415", "city":"theni"},
+    {"firstname":"priya", "lastname":"S", "email":"priya@gmail.com", "contact":"9800543210","telephone":"258441", "city":"madurai"},
+    {"firstname":"devi", "lastname":"sri", "email":"devi@gmail.com", "contact":"8876543210","telephone":"241546", "city":"dindugul"},
+    {"firstname":"kumar", "lastname":"N", "email":"kumar@gmail.com", "contact":"7896543210", "telephone":"201478","city":"salem"},
+    {"firstname":"karthik", "lastname":"raja", "email":"karthik@gmail.com", "contact":"9878952210","telephone":"285415", "city":"trichy"},
+    {"firstname":"raja", "lastname":"pandi", "email":"raja@gmail.com", "contact":"9876543210","telephone":"258441", "city":"palani"},
+    {"firstname":"lokesh", "lastname":"sharma", "email":"lokesh@gmail.com", "contact":"8456543210", "telephone":"201478","city":"chennai"},
+    {"firstname":"kathir", "lastname":"V", "email":"kathir@gmail.com", "contact":"6384543210","telephone":"285415", "city":"kollam"},
+    {"firstname":"anu", "lastname":"priya", "email":"anu@gmail.com", "contact":"7156543210","telephone":"296037", "city":"kottayam"}
+   ]
+}
