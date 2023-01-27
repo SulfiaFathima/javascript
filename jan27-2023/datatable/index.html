@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript CRUD Operation</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="column" style="width:30%;">
+            <h1 class="headingform"><u>Student Form</u></h1>
+
+            <div class="studentform">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Full Name</label>
+                        <input type="text" name="firstname" id="firstname" required>
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" name="lastname" id="lastname" required>
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label>Mobile No</label><label class="validationerror hide" id="contactValidationError">Enter
+                            Valid Mobile Number.</label>
+                        <input type="number" name="contact" id="contact" onkeyup="validate()" required>
+                    </div>
+                    <div>
+                        <label>Telephone</label><label class="validationerror hide" id="telephoneValidationError">Enter
+                            Valid Telephone Number.</label>
+                        <input type="number" name="telephone" id="telephone" onkeyup="validate()" required>
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city" required>
+                    </div>
+
+                    <div class="submit">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="column" style="width:70%">
+            <!-- <div class="deleteall"> </div> -->
+
+            <div class="importjson">
+                <button class="btn" onclick="deleteall()">Delete All</button>
+                <button class="btn" onclick="importdata()">Import</button>
+            </div>
+
+            <div class="studenttable">
+                <table class="list" id="studentList">
+                    <thead>
+                        <tr>
+                            <th>FirstName</th>
+                            <th>LastName</th>
+                            <th>Email</th>
+                            <th>Mobile No</th>
+                            <th>Telephone</th>
+                            <th>City</th>
+                            <th>Action</th>
+                        </tr>
+                        <tr>
+                            <td id="noRecordTR" colspan="7" style="text-align: center;">No Record Found</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</div>
+<script src="./js/file.js"></script>
+</body>
+
+</html>
