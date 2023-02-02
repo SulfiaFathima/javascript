@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD_API</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/document.png">
+
+</head>
+
+<body>
+    
+    <button onclick="importdata()">import</button>
+
+    <div class="employeetable">
+        <form id="formElem">
+            <!-- <div>
+                <label>ID</label>
+                <input type="text" name="id" id="id" required>
+            </div> -->
+            <!-- <div>
+                <label>Email</label>
+                <input type="email" name="email" id="email" required>
+            </div> -->
+            <div>
+                <label>Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div>
+                <label>Job</label>
+                <input type="text" name="job" id="job" required>
+            </div>  
+            <!-- <div>
+                <label>Avatar</label>
+                <input type="text" name="avatar" id="avatar" required>
+            </div> -->
+            
+            <div class="submit">
+                <input type="submit" value="Submit">
+            </div>          </form>
+        <table class="list" id="employeelist">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Avatar</th>
+                </tr>
+                <!-- <tr>
+                    <td id="noRecordTR" colspan="7" style="text-align: center;">No Record Found</td>
+                </tr> -->
+            </thead>
+            <tbody id="data">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
