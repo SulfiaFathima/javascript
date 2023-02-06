@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD_API</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./images/document.png">
+
+</head>
+
+<body>
+
+
+    <form id="form" onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+        
+        <div>
+            <label>ID</label>
+            <input type="number" name="id" id="id" required>
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label>First Name</label>
+            <input type="text" name="fname" id="fname" required>
+        </div>
+        <div>
+            <label>Last Name</label>
+            <input type="text" name="lname" id="lname" required>
+        </div>
+
+        <div>
+            <label>Avatar</label>
+            <input type="text" name="avatar" id="avatar" required>
+        </div>
+        <input type="submit" value="Add" />
+
+
+        <!-- <div class="submit">
+                <input type="submit" value="Submit">
+              <button>Submit</button>
+>            </div>          -->
+    </form>
+    <button onclick="importdata()">import</button>
+
+    <div class="employeetable">
+        <table class="list" id="employeelist">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Avatar</th>
+                    <th>Action</th>
+
+                </tr>
+                <!-- <tr>
+                    <td id="noRecordTR" colspan="7" style="text-align: center;">No Record Found</td>
+                </tr> -->
+            </thead>
+            <tbody id="data">
+
+            </tbody>
+        </table>
+        <div id="listingTable"></div>
+<a href="prevPage()" id="btn_prev">Prev</a>
+<a href="nextPage()" id="btn_next">Next</a>
+page: <span id="page"></span>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
